@@ -28,7 +28,7 @@ export const AnimalForm = () => {
   }, [animalId])
 
   const constructNewAnimal = () => {
-    const locationId = parseInt(animal.location_id)
+    const locationId = parseInt(animal.locationId)
 
     if (locationId === 0) {
       window.alert("Please select a location")
@@ -84,7 +84,7 @@ export const AnimalForm = () => {
       <fieldset>
         <div className="form-group">
           <label htmlFor="locationId">Location: </label>
-          <select name="location_id" className="form-control"
+          <select name="locationId" className="form-control"
             value={animal.location_id}
             onChange={handleControlledInputChange}>
 
